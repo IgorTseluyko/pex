@@ -9,4 +9,4 @@ java -jar -XX:MaxPermSize=128m -XX:+UseParNewGC -XX:MaxNewSize=256m -XX:NewSize=
 
 All 1000 urls were processed within ~3:20sec on 4 core machine.
 
-![jvisualvm resources utilization](https://ibb.co/jYvqJH)
+![jvisualvm resources utilization](res_utilization.png)
