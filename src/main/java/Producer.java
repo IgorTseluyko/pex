@@ -28,7 +28,7 @@ public class Producer {
      * Reads file by default bufferSize(8192) and put lines into queue
      */
     protected void start() {
-        try (BufferedReader br = Files.newBufferedReader(Paths.get("/Users/itseluiko/Desktop/ext/pex/src/main/resources/urls.txt"))) {
+        try (BufferedReader br = Files.newBufferedReader(Paths.get("src/main/resources/urls.txt"))) {
             br.lines().forEach(id -> {
                 try {
                     queue.put(id);

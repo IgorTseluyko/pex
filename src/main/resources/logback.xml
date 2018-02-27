@@ -9,7 +9,7 @@
     </appender>
 
     <appender name="colors" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${user.dir}/src/main/resources/output.csv</file>
+        <file>${user.dir}/output.csv</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>%msg%n</Pattern>
         </encoder>
@@ -21,7 +21,7 @@
 
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- rollover daily -->
-            <fileNamePattern>${user.dir}/src/main/resources/output.%d{yyyy-MM-dd}.%i.csv
+            <fileNamePattern>${user.dir}/output.%d{yyyy-MM-dd}.%i.csv
             </fileNamePattern>
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
